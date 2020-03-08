@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 2.6)
+project (vfuzz)
+add_definitions(-Wall -Wextra -std=c++17 -O3 -g -DNDEBUG)
+add_subdirectory(libvfuzz-core)
+add_subdirectory(libvfuzz-runtime)
+add_subdirectory(examples)
