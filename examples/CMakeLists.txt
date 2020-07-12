@@ -3,6 +3,7 @@ project (examples)
 
 include_directories(../include/)
 include_directories(../libvfuzz-core/src)
+include_directories(../third_party/fuzzing-headers/include/)
 
 add_executable(nlohmann nlohmann.cpp)
 set_target_properties(nlohmann PROPERTIES COMPILE_FLAGS -fsanitize-coverage=trace-pc-guard)
